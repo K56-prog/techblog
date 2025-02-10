@@ -10,10 +10,32 @@
 </header>
 
 <main>
-    <div style="text-align: left;" a="color: white">
+    <!--<div style="text-align: left;" a="color: white"> -->
         <a href="week1.html">1～5日目へ</a>
-    </div>
+    <!--</div>-->
     
+    <ul>
+        <li>Djangoについて</li>
+        子テンプレートにcssをインポートしようと思ったら、そのheaderタグ内でlinkタグでcssを指定しなきゃいけないと思うが、実はその時headerタグは使わず、
+        <p>{% block extra_css %}</p>
+        <p>普通のリンクタグ</p>
+        <p>{% endblock %}</p>
+        と書けば良いことが分かった。
+        <p></p>
+        <li>Gitについて</li>
+        ブランチ切るときに一回マスターをpullしちゃえば、そのあとはプルリクエスト作るまではもうpullしなくていいことが分かった。
+        （プルリクでconflict起きてたらそれはその時直せばいい）
+        <p></p>
+        <li>htmlについて</li>
+        今書いてるhtmlがあるディレクトリ外にあるcssを参照するときは、../../って感じでhtmlとcssの共通の親ディレクトリに行く。
+        <p></p>
+        <li>感想</li>
+        今日は面談があり、相手は心理学専攻のインターン生だったが、ドラゴンボールの話題が通じて嬉しかった。
+        また、社員の人にお勧めしてもらったスープカレー屋さんにも行ってみたが、とても濃厚でおいしかった（特にチキン）。
+    </ul>
+    <div style="text-align: right;" >
+        <a href="day7.html">7日目へ</a>
+    </div>
     <a href="index.html">ホームへ戻る</a>
 
 </main>
