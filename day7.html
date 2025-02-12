@@ -10,11 +10,30 @@
 </header>
 
 <main>
-    <div style="text-align: left;" a="color: white">
-        <a href="day6.html">6日目へ</a>
-    </div>
-    <div style="text-align: right;" a="color: white">
-        <!--<a href="day8.html">8日目へ</a>-->
+    <a href="day6.html">6日目へ</a>
+    <ul>
+        <li>Djangoについて</li>
+        大規模なアプリの場合、おそらくsetting.pyの内容はlocal_setting.pyという名前のファイルで管理していくっぽい。（それがどこのディレクトリにあるかはまだ未確認）
+        <p></p>
+        <li>Gitについて</li>
+        環境構築の段階でpvs2をクローンしたとき、実は"v2/master"という感じでmasterブランチのみを指定していたことが分かった。
+        よって、引き継ぎ課題に着手する際、既に誰かによって作成されたfeatureブランチをローカルに持ってこなきゃいけなくて、
+        そのためのコマンドは（おそらく）
+        <p>git switch -c ブランチ名 origin/ブランチ名</p>
+        でよいと思う（明日要確認）。また、リモート含めたすべてのブランチを見るには
+        <p>git branch -a</p>
+        と打てばよいことが分かった。
+        <p></p>
+        
+        <li>感想</li>
+        今日で、このインターン最初の課題にある程度けりがつき、新たな課題に着手することができた。明日からは
+        <p>stg向けプルリクエスト作成&マージ</p>
+        <p>stg環境でテスト</p>
+        <p>rls向けプルリクエスト作成&マージ</p>
+        という流れになると思うので、スムーズに進めていき、初めての課題を完璧に終わらせたい。
+    </ul>
+    <div style="text-align: right;">
+        <a href="day8.html">8日目へ</a>
     </div>
     
     <a href="index.html">ホームへ戻る</a>
